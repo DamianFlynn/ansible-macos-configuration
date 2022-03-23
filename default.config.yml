@@ -33,6 +33,7 @@ sudoers_custom_config: ''
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
 dotfiles_repo: https://github.com/DamianFlynn/dotfiles.git
+dotfiles_repo_version: main
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
 dotfiles_files:
@@ -109,7 +110,7 @@ homebrew_cask_apps:
   - elgato-wave-link
   - hdhomerun
   # - yubico-authenticator
-  # - yubico-yubikey-manager
+  - yubico-yubikey-manager
   # - yubico-yubikey-personalization-gui
   # - yubico-yubikey-piv-manager
   # - bose-updater
