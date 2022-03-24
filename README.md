@@ -153,13 +153,36 @@ Settings -> Preferences -> Mission Control
 ## iTerm
 In the Preferences window, select profiles
 
-### Colors
+### Appearance
+#### General
+Status bar location, set to *Bottom*
+
+### Keys
+#### Hotkeys
+Enable *Hotkeys*, and set the following options
+- Hotkey to use, in my case this is CTRL + `
+- [ ] Pin hotkey window
+- [ ] Automatically reopen on app reactivation
+- [x] Animate showing and hiding
+- [x] Floating Window 
+
+
+### Profiles
+#### Colors
 In the *Color presets...* dropdown, select **Import** and load the file `~/Developer/dotfiles/theme.itermcolors`. Then in the same *Color Presets...* dropdown select the new **theme**
 
-### Font
+#### Text
 Set the Font to *Meslo LG L for Powerline*, weight as *Regular*, with *Ligatures* enabled 
-### Session
+
+#### Session
 Set the *Status bar* as enabled and then configure the status bar as you wish, typically, I add 
+
+#### Window
+Settings for new Windows
+- Set Style to *Normal*
+- Set Screen to *Screen with Cursor*
+- Set Space to *All Spaces*
+
 ## 1Password
 In the Preferences window of the application we should apply the following
 - CPU Utilization
