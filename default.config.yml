@@ -48,14 +48,14 @@ fonts:
       - Meslo LG L Bold for Powerline.ttf
       - Meslo LG L Italic for Powerline.ttf
       - Meslo LG L Regular for Powerline.ttf
-      - Meslo LG M Bold Italic for Powerline.ttf
-      - Meslo LG M Bold for Powerline.ttf
-      - Meslo LG M Italic for Powerline.ttf
-      - Meslo LG M Regular for Powerline.ttf
-      - Meslo LG S Bold Italic for Powerline.ttf
-      - Meslo LG S Bold for Powerline.ttf
-      - Meslo LG S Italic for Powerline.ttf
-      - Meslo LG S Regular for Powerline.ttf
+      # - Meslo LG M Bold Italic for Powerline.ttf
+      # - Meslo LG M Bold for Powerline.ttf
+      # - Meslo LG M Italic for Powerline.ttf
+      # - Meslo LG M Regular for Powerline.ttf
+      # - Meslo LG S Bold Italic for Powerline.ttf
+      # - Meslo LG S Bold for Powerline.ttf
+      # - Meslo LG S Italic for Powerline.ttf
+      # - Meslo LG S Regular for Powerline.ttf
 
 dotfiles_repo: https://github.com/DamianFlynn/dotfiles.git
 dotfiles_repo_version: main
