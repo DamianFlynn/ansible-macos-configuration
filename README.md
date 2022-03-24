@@ -224,6 +224,40 @@ Host *
 ```
 
 
+## Wave Link
+
+Elgato Wave 3
+
+VST
+
+### Renegate 
+
+Gain Map -30db with 100% Gain Cut
+Detector at -29db
+Envelope 30ms Attach, Hold for 70ms, and Release at 20ms
+
+### T-De-Esser
+
+Processing at -32db
+Intensity at 7.0
+Sharpnet at -7.0
+Frequency High
+
+### Nova Equalizer
+
+| Q | Freq | Gain |
+|---|---|---|
+|1.0| 115 Hz| 3.0db|
+|1.0| 230 Hz| -0.5db |
+|0.5| 1000 Hz | -1.5db |
+|0.60|3.2 kHz| 4.5db |
+
+### Frontier Limitier
+
+Release - Fast
+Output Level -3.5db
+Threshold -8.0db
+
 ### Use with a remote Mac
 
 You can use this playbook to manage other Macs as well; the playbook doesn't even need to be run from a Mac at all! If you want to manage a remote Mac, either another Mac on your network, or a hosted Mac like the ones from [MacStadium](https://www.macstadium.com), you just need to make sure you can connect to it with SSH:
