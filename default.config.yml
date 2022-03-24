@@ -131,6 +131,8 @@ homebrew_cask_apps:
   - microsoft-edge
   - visual-studio-code
   - obsidian
+  - spotify
+  - audacity
 
   # tap: homebrew/cask-drivers
   - elgato-stream-deck
