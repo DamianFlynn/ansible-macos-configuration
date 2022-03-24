@@ -32,6 +32,106 @@ This playbook can be used on an fresh install of MacOS (Greenfield) or an curren
      > Note: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
 
 
+## What's Gets Installed
+
+### Fonts
+
+#### Monoid 
+- Monoisome-Regular.ttf
+
+#### Meslo LG M for Powerline
+- Meslo LG L Bold Italic for Powerline.ttf
+- Meslo LG L Bold for Powerline.ttf
+- Meslo LG L Italic for Powerline.ttf
+- Meslo LG L Regular for Powerline.ttf
+- Meslo LG M Bold Italic for Powerline.ttf
+- Meslo LG M Bold for Powerline.ttf
+- Meslo LG M Italic for Powerline.ttf
+- Meslo LG M Regular for Powerline.ttf
+- Meslo LG S Bold Italic for Powerline.ttf
+- Meslo LG S Bold for Powerline.ttf
+- Meslo LG S Italic for Powerline.ttf
+- Meslo LG S Regular for Powerline.ttf
+
+### dotfiles
+Cloned from my repo https://github.com/DamianFlynn/dotfiles.git
+- .zshrc
+- .gitignore
+- .inputrc
+- .osx
+- .vimrc
+
+### Applications 
+#### Command Line (Homebrew)
+- autoconf
+- bash-completion
+- gettext
+- gifsicle
+- git
+- github/gh/gh
+- go
+- gpg
+- httpie
+- iperf
+- mcrypt
+- nmap
+- node
+- ssh-copy-id
+- readline
+- openssl
+- pv
+- wget
+- wrk
+- zsh-history-substring-search
+- azure-cli
+- brew-cask-completion
+- curl
+- exiftool
+- flux
+- packer
+- hugo
+- jq
+- helm
+- kompose
+- telnet
+- k9s
+- terraform
+- kubernetes-cli
+- tmux
+- mas
+- bicep
+
+#### Graphical Apps (Homebrew)
+- docker
+- iterm2
+- google-chrome
+- vagrant
+- microsoft-teams
+- powershell
+- microsoft-edge
+- visual-studio-code
+- obsidian
+- elgato-stream-deck
+- elgato-wave-link
+- hdhomerun
+- yubico-yubikey-manager
+- 1password-beta
+- 1password-cli-beta
+
+#### Graphical Apps (Mac App Store)
+- Cardhop
+- MQTT Explorer
+- Microsoft Word
+- Microsoft PowerPoint
+- Microsoft Excel
+- Microsoft Outlook
+- OneDrive
+- XMind: Mind Mapping
+- Pluralsight: Learn Tech Skills
+- WhatsApp Desktop
+- Home Assistant
+- The Unarchiver
+
    ╭─────────────────────────────────────────────────────────────────╮
    │░░░░░░░░░░░░░░░░░░░░░░░░░░░ Next Steps ░░░░░░░░░░░░░░░░░░░░░░░░░░│
    ├─────────────────────────────────────────────────────────────────┤
@@ -41,6 +141,36 @@ This playbook can be used on an fresh install of MacOS (Greenfield) or an curren
    │        The link below has Post Installation Instructions        │
    │                                                                 │
    └─────────────────────────────────────────────────────────────────┘
+# Manual Steps
+
+## Operating System settings
+Settings -> Preferences -> Mission Control
+
+- [x] Automatically rearrange spaces based on most recent use
+
+## 1Password
+In the Preferences window of the application we should apply the following
+
+### General
+- [x] Start at login
+- [x] Format secure notes using Markdown
+
+### Developer
+- [x] Use the SSH Agent
+- [x] Display key names when authorizing connections
+- [x] Biometric unlock for 1Password CLI
+
+## SSH
+
+### Enable 1Password as the SSH Agent
+1Password now includes to option of hosting the private keys for our SSH collection. With the private keys stored in the vault, we can proceed to configure the ssh agent on MacOS to use 1Password as the provider
+
+Edit the configuration file with `vi ~/.ssh/config` and add the following content:
+
+```
+Host *
+	IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+```
 
 
 ### Use with a remote Mac

@@ -32,10 +32,35 @@ sudoers_custom_config: ''
 #   # Allow users in admin group to use sudo with no password.
 #   %admin ALL=(ALL) NOPASSWD: ALL
 
+fonts:
+  - name: Monoid
+    archive: https://github.com/jb-dmitry/monoid.git
+    version: master
+    directory: Monoisome
+    files:
+      - Monoisome-Regular.ttf
+  - name: Meslo LG M for Powerline
+    archive: https://github.com/powerline/fonts.git
+    version: master
+    directory: "Meslo Slashed"
+    files:
+      - Meslo LG L Bold Italic for Powerline.ttf
+      - Meslo LG L Bold for Powerline.ttf
+      - Meslo LG L Italic for Powerline.ttf
+      - Meslo LG L Regular for Powerline.ttf
+      - Meslo LG M Bold Italic for Powerline.ttf
+      - Meslo LG M Bold for Powerline.ttf
+      - Meslo LG M Italic for Powerline.ttf
+      - Meslo LG M Regular for Powerline.ttf
+      - Meslo LG S Bold Italic for Powerline.ttf
+      - Meslo LG S Bold for Powerline.ttf
+      - Meslo LG S Italic for Powerline.ttf
+      - Meslo LG S Regular for Powerline.ttf
+
 dotfiles_repo: https://github.com/DamianFlynn/dotfiles.git
 dotfiles_repo_version: main
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/Development/GitHub/dotfiles
+dotfiles_repo_local_destination: ~/Developer/dotfiles
 dotfiles_files:
   - .zshrc
   - .gitignore
