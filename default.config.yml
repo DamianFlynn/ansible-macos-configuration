@@ -67,6 +67,8 @@ dotfiles_files:
   - .inputrc
   - .osx
   - .vimrc
+  - .aliases
+  - .p10k.zsh
 
 homebrew_taps:
   - homebrew/core

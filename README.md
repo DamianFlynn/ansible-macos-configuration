@@ -21,6 +21,8 @@ This playbook can be used on an fresh install of MacOS (Greenfield) or an curren
      
   3. Install Oh-My-Zsh
      1. Run the following command `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+     2. Download the *Powerlevel10k* theme with the command `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
+     3. Download and install the *zsg-autosuggestions* plugin with the command `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
 
   3. Clone or download this repository to your local drive.
      1. Create a Developer folder, with `mkdir ~/Developer && cd ~/Developer`
@@ -148,8 +150,22 @@ Settings -> Preferences -> Mission Control
 
 - [x] Automatically rearrange spaces based on most recent use
 
+## iTerm
+In the Preferences window, select profiles
+
+### Colors
+In the *Color presets...* dropdown, select **Import** and load the file `~/Developer/dotfiles/theme.itermcolors`. Then in the same *Color Presets...* dropdown select the new **theme**
+
+### Font
+Set the Font to *Meslo LG L for Powerline*, weight as *Regular*, with *Ligatures* enabled 
+### Session
+Set the *Status bar* as enabled and then configure the status bar as you wish, typically, I add 
 ## 1Password
 In the Preferences window of the application we should apply the following
+- CPU Utilization
+- Memory Utilization
+- Network Troughtput
+- Git state
 
 ### General
 - [x] Start at login
