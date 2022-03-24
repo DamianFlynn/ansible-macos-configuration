@@ -168,6 +168,8 @@ Enable *Hotkeys*, and set the following options
 
 
 ### Profiles
+
+The following can be applied on the **Default** Profile
 #### Colors
 In the *Color presets...* dropdown, select **Import** and load the file `~/Developer/dotfiles/theme.itermcolors`. Then in the same *Color Presets...* dropdown select the new **theme**
 
@@ -179,6 +181,16 @@ Set the *Status bar* as enabled and then configure the status bar as you wish, t
 
 #### Window
 Settings for new Windows
+- Set Style to *Normal*
+- Set Screen to *Screen with Cursor*
+- Set Space to *All Spaces*
+
+On the **Hotkey Window** Profile
+
+#### Window
+Settings for new Windows
+- Columns - 132
+- Rows - 25
 - Set Style to *Normal*
 - Set Screen to *Screen with Cursor*
 - Set Space to *All Spaces*
