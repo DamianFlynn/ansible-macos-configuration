@@ -23,6 +23,7 @@ This playbook can be used on an fresh install of MacOS (Greenfield) or an curren
      1. Run the following command `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
      2. Download the *Powerlevel10k* theme with the command `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
      3. Download and install the *zsg-autosuggestions* plugin with the command `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+     4. Download and install the *1Password* plugin with the command `git clone https://github.com/sirhc/op.plugin.zsh.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/op`
 
   3. Clone or download this repository to your local drive.
      1. Create a Developer folder, with `mkdir ~/Developer && cd ~/Developer`

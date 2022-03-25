@@ -133,7 +133,9 @@ homebrew_cask_apps:
   - obsidian
   - spotify
   - audacity
-
+  - google-drive
+  - keyboard-maestro
+  - logitech-options
   # tap: homebrew/cask-drivers
   - elgato-stream-deck
   - elgato-wave-link
