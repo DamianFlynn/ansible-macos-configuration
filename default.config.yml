@@ -137,6 +137,7 @@ homebrew_cask_apps:
   - google-drive
   - keyboard-maestro
   - logitech-options
+  - drawio
   # tap: homebrew/cask-drivers
   - elgato-stream-deck
   - elgato-wave-link
