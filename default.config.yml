@@ -115,7 +115,6 @@ homebrew_installed_packages:
   - k9s
   - terraform
   - kubernetes-cli
-  # - unrar
   - tmux
   - mas
   # tap: homebrew/cask-versions
@@ -138,6 +137,7 @@ homebrew_cask_apps:
   - keyboard-maestro
   - logitech-options
   - drawio
+  - parallels-virtualization-sdk
   # tap: homebrew/cask-drivers
   - elgato-stream-deck
   - elgato-wave-link
