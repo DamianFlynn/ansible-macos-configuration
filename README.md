@@ -34,6 +34,36 @@ This playbook can be used on an fresh install of MacOS (Greenfield) or an curren
 
      > Note: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
 
+    6. Multipass
+    `sudo multipass set local.driver=qemu
+     uname -vp
+Darwin Kernel Version 20.6.0: Tue Feb 22 21:10:42 PST 2022; root:xnu-7195.141.26~1/RELEASE_ARM64_T8101 arm
+
+$ multipass networks
+Name     Type         Description
+bridge0  bridge       Network bridge with en1, en2
+en0      wifi         Wi-Fi
+en1      thunderbolt  Thunderbolt 1
+en2      thunderbolt  Thunderbolt 2
+en3      ethernet     Ethernet Adaptor (en3)
+en4      ethernet     Ethernet Adaptor (en4)
+
+$ multipass launch --network en0
+Launched: exalting-gnatcatcher
+
+$ ping exalting-gnatcatcher
+PING exalting-gnatcatcher.local (10.2.0.39): 56 data bytes
+64 bytes from 10.2.0.39: icmp_seq=0 ttl=63 time=7.727 ms
+64 bytes from 10.2.0.39: icmp_seq=1 ttl=63 time=15.083 ms
+64 bytes from 10.2.0.39: icmp_seq=2 ttl=63 time=15.719 ms
+^C
+--- exalting-gnatcatcher.local ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 7.727/12.843/15.719/3.627 ms
+
+$ multipass list
+    `
+
 
 ## What's Gets Installed
 
