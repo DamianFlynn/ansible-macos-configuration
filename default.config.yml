@@ -79,100 +79,123 @@ homebrew_taps:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - age
+  - ansible
   - autoconf
+  - azure-cli
   - bash-completion
+  - bicep
+  - brew-cask-completion
+  - curl
+  - direnv
+  - exiftool
+  - fluxcd/tap/flux
   - gettext
   - gifsicle
   - git
-  - pre-commit
   - github/gh/gh
+  - gitleaks
+  - go-task/tap/go-task
   - go
   - gpg
+  - graphviz
   - httpie
+  - helm
+  - hugo
+  - ipcalc
   - iperf
+  - jq
+  - k9s
+  - kompose
+  - kustomize
+  - kubernetes-cli
+  - mas
   - mcrypt
   - nmap
   - node
-  - ssh-copy-id
-  - readline
   - openssl
+  - packer
+  - pandoc
+  - pre-commit
+  - prettier
   - pv
+  - readline
+  - sops
+  - ssh-copy-id
+  - stern
+  - telnet
+  - terraform
+  - tflint
+  - tmux
   - wget
   - wrk
+  - yamllint
+  - yq
+  - zsh-autosuggestions
   - zsh-history-substring-search
-  - azure-cli
-  # - azure-functions-core-tools@3
-  - brew-cask-completion
-  - curl
-  - exiftool
-  - flux
-  - packer
-  - hugo
-  - jq
-  - helm
-  - kompose
-  - telnet
-  - k9s
-  - terraform
-  - kubernetes-cli
-  - tmux
-  - mas
-  # tap: homebrew/cask-versions
-  - bicep
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - docker
-  - iterm2
-  - google-chrome
-  - vagrant
-  - microsoft-teams
-  - powershell
-  - microsoft-edge
-  - visual-studio-code
-  - obsidian
-  - spotify
+  - 1password-beta
+  - 1password-cli-beta
+  - alfred
+  - alt-tab
   - audacity
-  - google-drive
-  - keyboard-maestro
-  - logitech-options
+  - bartender
+  - cheatsheet
+  - discord
+  - docker
   - drawio
-  - parallels-virtualization-sdk
-  # tap: homebrew/cask-drivers
   - elgato-stream-deck
   - elgato-wave-link
+  - google-chrome
+  - google-drive
   - hdhomerun
-  # - yubico-authenticator
+  - iterm2
+  - logitech-options
+  - microsoft-edge
+  - microsoft-teams
+  - notion
+  - obsidian
+  - parallels-virtualization-sdk
+  - plex
+  - plexamp
+  - powershell
+  - spotify
+  - vagrant
+  - visual-studio-code
+  - vlc
+  - keyboard-maestro
   - yubico-yubikey-manager
+  # - yubico-authenticator
   # - yubico-yubikey-personalization-gui
   # - yubico-yubikey-piv-manager
   # - bose-updater
   
-  # tap: homebrew/cask-versions
-  - 1password-beta
-  - 1password-cli-beta
-  - cheatsheet
-  - alt-tab
-  - alfred
-  - bartender
-  - plex
-  - plexamp
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: 
-  - { id: 1290358394, name: "Cardhop"}
-  # - { id: 975937182, name: "Fantastical - Calendar"}
-  - { id: 1455214828, name: "MQTT Explorer"}
-  - { id: 462054704, name: "Microsoft Word"}
-  - { id: 462062816, name:  "Microsoft PowerPoint"}
-  - { id: 462058435, name: "Microsoft Excel"}
+  - { id: 545519333, name: "Amazon Prime Video"}
+  - { id: 431748264, name: "Pluralsight: Learn Tech Skills"}
+  - { id: 1099568401, name: "Home Assistant"}
   - { id: 985367838, name: "Microsoft Outlook"}
   - { id: 823766827, name: "OneDrive"}
-  - { id: 1327661892, name: "XMind: Mind Mapping"}
-  - { id: 431748264, name: "Pluralsight: Learn Tech Skills"}
+  - { id: 1295203466, name: "Microsoft Remote Desktop"}
+  - { id: 784801555, name: "Microsoft OneNote"}
+  - { id: 462062816, name:  "Microsoft PowerPoint"}
+  - { id: 462058435, name: "Microsoft Excel"}
+  - { id: 462054704, name: "Microsoft Word"}
   - { id: 1147396723, name: "WhatsApp Desktop" }
-  - { id: 1099568401, name: "Home Assistant"}
+  - { id: 1455214828, name: "MQTT Explorer"}
   - { id: 425424353, name: "The Unarchiver"}
+  - { id: 1290358394, name: "Cardhop"}
+  - { id: 617187233, name: "iHelp"}
+  - { id: 611021963, name: "SerialTools"}
+  - { id: 1327661892, name: "XMind: Mind Mapping"}
+  - { id: 1569813296, name: "1Password for Safari"}
+  - { id: 975937182, name: "Fantastical - Calendar"}
+  - { id: 1475387142, name: "Tailscale" }
+  - { id: 1381004916, name: "Discovery - DNS-SD Browser"}
 
 mas_email: ""
 mas_password: ""

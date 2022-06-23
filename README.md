@@ -34,7 +34,25 @@ This playbook can be used on an fresh install of MacOS (Greenfield) or an curren
 
      > Note: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
 
-    6. Multipass
+## Virtual Machines
+
+### Vagrant
+
+Make sure QEMU is installed, if not:
+
+`brew install qemu vagrant`
+
+Install plugin:
+
+`vagrant plugin install vagrant-qemu`
+
+Prepare a Vagrantfile, see Example, and start:
+
+`vagrant up --provider qemu`
+
+
+
+###  Multipass
     `sudo multipass set local.driver=qemu
      uname -vp
 Darwin Kernel Version 20.6.0: Tue Feb 22 21:10:42 PST 2022; root:xnu-7195.141.26~1/RELEASE_ARM64_T8101 arm
@@ -48,20 +66,49 @@ en2      thunderbolt  Thunderbolt 2
 en3      ethernet     Ethernet Adaptor (en3)
 en4      ethernet     Ethernet Adaptor (en4)
 
-$ multipass launch --network en0
-Launched: exalting-gnatcatcher
+$ multipass find
+Image                       Aliases           Version          Description
+snapcraft:core18            18.04             20201111         Snapcraft builder for Core 18
+snapcraft:core20            20.04             20210921         Snapcraft builder for Core 20
+core                        core16            20200818         Ubuntu Core 16
+core18                                        20211124         Ubuntu Core 18
+18.04                       bionic            20220513         Ubuntu 18.04 LTS
+20.04                       focal,lts         20220505         Ubuntu 20.04 LTS
+21.10                       impish            20220309         Ubuntu 21.10
+appliance:adguard-home                        20200812         Ubuntu AdGuard Home Appliance
+appliance:mosquitto                           20200812         Ubuntu Mosquitto Appliance
+appliance:nextcloud                           20200812         Ubuntu Nextcloud Appliance
+appliance:openhab                             20200812         Ubuntu openHAB Home Appliance
+appliance:plexmediaserver                     20200812         Ubuntu Plex Media Server Appliance
+anbox-cloud-appliance                         latest           Anbox Cloud Appliance
+charm-dev                                     latest           A development and testing environment for charmers
+docker                                        latest           A Docker environment with Portainer and related tools
+minikube                                      latest           minikube is local Kubernetes
 
-$ ping exalting-gnatcatcher
-PING exalting-gnatcatcher.local (10.2.0.39): 56 data bytes
+  <command> <action> <Image> <bridge network> <name>   <cpus> <ram> <disk>
+$ multipass launch   21.10   --network en0    -n node1 -c 2   -m 4G -d 50G
+Launched: node1
+
+multipass launch 22.04 -n primary -c 2 -m 4G -d 50G
+
+$ ping node1
+PING node1.local (10.2.0.39): 56 data bytes
 64 bytes from 10.2.0.39: icmp_seq=0 ttl=63 time=7.727 ms
 64 bytes from 10.2.0.39: icmp_seq=1 ttl=63 time=15.083 ms
 64 bytes from 10.2.0.39: icmp_seq=2 ttl=63 time=15.719 ms
 ^C
---- exalting-gnatcatcher.local ping statistics ---
+--- node1.local ping statistics ---
 3 packets transmitted, 3 packets received, 0.0% packet loss
 round-trip min/avg/max/stddev = 7.727/12.843/15.719/3.627 ms
 
 $ multipass list
+
+$ multipass shell
+
+>$ sudo passwd ubuntu
+>$ sudo adduser username
+>$ sudo usermod -aG sudo username
+>$ ip a
     `
 
 
