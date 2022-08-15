@@ -34,6 +34,39 @@ This playbook can be used on an fresh install of MacOS (Greenfield) or an curren
 
      > Note: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
 
+## VS Code Extensions
+
+Extensions currently installed in VS Code
+
+- ms-toolsai.jupyter-renderers
+- ms-dotnettools.vscode-dotnet-runtime
+- ms-toolsai.jupyter-keymap
+- ms-azuretools.vscode-azureresourcegroups
+- davidanson.vscode-markdownlint
+- signageos.signageos-vscode-sops
+- ms-vscode-remote.remote-ssh-edit
+- ms-python.vscode-pylance
+- ms-azuretools.vscode-azurelogicapps
+- ms-vscode-remote.remote-ssh
+- ms-vscode.azurecli
+- ms-azuretools.vscode-azurefunctions
+- ms-vscode.powershell
+- tintinweb.graphviz-interactive-preview
+- eamodio.gitlens
+- ms-kubernetes-tools.vscode-kubernetes-tools
+- redhat.ansible
+- redhat.vscode-yaml
+- ms-vscode.azure-account
+- ms-python.python
+- ms-kubernetes-tools.vscode-aks-tools
+- hashicorp.terraform
+- ms-toolsai.jupyter
+- ms-azuretools.vscode-bicep
+- github.vscode-pull-request-github
+- github.copilot
+- github.remotehub
+- ms-vscode.remote-repositories
+
 ## Virtual Machines
 
 ### Vagrant
