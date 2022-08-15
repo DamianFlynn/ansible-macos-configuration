@@ -63,6 +63,8 @@ dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/Developer/dotfiles
 dotfiles_files:
   - .zshrc
+  - .gitconfig
+  - .aliases
   - .gitignore
   - .inputrc
   - .osx
@@ -88,6 +90,7 @@ homebrew_installed_packages:
   - brew-cask-completion
   - curl
   - direnv
+  - diff-so-fancy
   - exiftool
   - fluxcd/tap/flux
   - gettext
