@@ -12,27 +12,265 @@ This playbook can be used on an fresh install of MacOS (Greenfield) or an curren
 
   1. Launch Terminal
 
-  2. Install Homebrew
-     1. Run the following command```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
-     1. Homebrew will install as part of its toolkit, Apple's command line development tools called xcode
+  1. Install Homebrew
+      1. Run the following command```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
+      1. Homebrew will install as part of its toolkit, Apple's command line development tools called xcode
 
-  2. Install Ansible
+  1. Install Ansible
      1. Run the following command `brew install ansible`
-     
-  3. Install Oh-My-Zsh
-     1. Run the following command `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-     2. Download the *Powerlevel10k* theme with the command `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
-     3. Download and install the *zsg-autosuggestions* plugin with the command `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
-     4. Download and install the *1Password* plugin with the command `git clone https://github.com/sirhc/op.plugin.zsh.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/op`
 
-  3. Clone or download this repository to your local drive.
-     1. Create a Developer folder, with `mkdir ~/Developer && cd ~/Developer`
-     2. Clone the Playbook repository with `git clone https://github.com/DamianFlynn/ansible-macos-configuration.git`
-     3. Change in the playbook folder using `cd ansible-macos-configuration`
-     4. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
-     5. Run `ansible-playbook main.yml --ask-become-pass` inside this directory. Enter your macOS account password when prompted for the 'BECOME' password.
+  1. Install Oh-My-Zsh
+      1. Run the following command `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
+      1. Download the *Powerlevel10k* theme with the command `git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k`
+      1. Download and install the *zsg-autosuggestions* plugin with the command `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+      1. Download and install the *zsg-syntax-highlighting* plugin with the command `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+      1. Download and install the *1Password* plugin with the command `git clone https://github.com/sirhc/op.plugin.zsh.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/op`
 
-     > Note: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
+  1. Clone or download this repository to your local drive.
+      1. Create a Developer folder, with `mkdir ~/Developer && cd ~/Developer`
+      1. Clone the Playbook repository with `git clone https://github.com/DamianFlynn/ansible-macos-configuration.git`
+      1. Change in the playbook folder using `cd ansible-macos-configuration`
+      1. Run `ansible-galaxy install -r requirements.yml` inside this directory to install required Ansible roles.
+      1. Run `ansible-playbook main.yml --ask-become-pass` inside this directory. Enter your macOS account password when prompted for the 'BECOME' password.
+
+  > Note: If some Homebrew commands fail, you might need to agree to Xcode's license or fix some other Brew issue. Run `brew doctor` to see if this is the case.
+
+## What's Gets Installed
+
+### Fonts
+
+#### Monoid
+
+- Monoisome-Regular.ttf
+
+#### Meslo LG M for Powerline
+
+- Meslo LG L Bold Italic for Powerline.ttf
+- Meslo LG L Bold for Powerline.ttf
+- Meslo LG L Italic for Powerline.ttf
+- Meslo LG L Regular for Powerline.ttf
+- Meslo LG M Bold Italic for Powerline.ttf
+- Meslo LG M Bold for Powerline.ttf
+- Meslo LG M Italic for Powerline.ttf
+- Meslo LG M Regular for Powerline.ttf
+- Meslo LG S Bold Italic for Powerline.ttf
+- Meslo LG S Bold for Powerline.ttf
+- Meslo LG S Italic for Powerline.ttf
+- Meslo LG S Regular for Powerline.ttf
+
+### dotfiles
+
+Cloned from my [dotfile repo](https://github.com/DamianFlynn/dotfiles.git)
+
+- .zshrc
+- .gitignore
+- .gitconfig
+- .aliases
+- .inputrc
+- .osx
+- .vimrc
+
+### Applications
+
+#### Command Line (Homebrew)
+
+- autoconf
+- bash-completion
+- gettext
+- gifsicle
+- git
+- github/gh/gh
+- go
+- gpg
+- httpie
+- iperf
+- mcrypt
+- nmap
+- node
+- ssh-copy-id
+- readline
+- openssl
+- pv
+- wget
+- wrk
+- zsh-history-substring-search
+- azure-cli
+- brew-cask-completion
+- curl
+- exiftool
+- flux
+- packer
+- hugo
+- jq
+- helm
+- kompose
+- telnet
+- k9s
+- terraform
+- kubernetes-cli
+- tmux
+- mas
+- bicep
+
+#### Graphical Apps (Homebrew)
+
+- docker
+- iterm2
+- google-chrome
+- vagrant
+- microsoft-teams
+- powershell
+- microsoft-edge
+- visual-studio-code
+- obsidian
+- elgato-stream-deck
+- elgato-wave-link
+- hdhomerun
+- yubico-yubikey-manager
+- 1password-beta
+- 1password-cli-beta
+
+#### Graphical Apps (Mac App Store)
+
+- Cardhop
+- MQTT Explorer
+- Microsoft Word
+- Microsoft PowerPoint
+- Microsoft Excel
+- Microsoft Outlook
+- OneDrive
+- XMind: Mind Mapping
+- Pluralsight: Learn Tech Skills
+- WhatsApp Desktop
+- Home Assistant
+- The Unarchiver
+
+
+
+# Manual Steps
+
+## Operating System settings
+
+Settings -> Preferences -> Mission Control
+
+- [x] Automatically rearrange spaces based on most recent use
+
+## iTerm
+
+In the Preferences window, select profiles
+
+### Appearance
+
+#### General
+
+Status bar location, set to *Bottom*
+
+### Keys
+
+#### Hotkeys
+
+Enable *Hotkeys*, and set the following options
+
+- Hotkey to use, in my case this is CTRL + `
+- [ ] Pin hotkey window
+- [ ] Automatically reopen on app reactivation
+- [x] Animate showing and hiding
+- [x] Floating Window
+
+### Profiles
+
+The following can be applied on the **Default** Profile
+
+#### Colors
+
+In the *Color presets...* dropdown, select **Import** and load the file `~/Developer/dotfiles/theme.itermcolors`. Then in the same *Color Presets...* dropdown select the new **theme**
+
+#### Text
+
+Set the Font to *Meslo LG L for Powerline*, weight as *Regular*, with *Ligatures* enabled
+
+#### Session
+
+Set the *Status bar* as enabled and then configure the status bar as you wish, typically, I add
+
+#### Window
+
+Settings for new Windows
+On the **Hotkey Window** Profile
+
+- Columns - 132
+- Rows - 25
+- Set Style to *Normal*
+- Set Screen to *Screen with Cursor*
+- Set Space to *All Spaces*
+
+## 1Password
+
+In the Preferences window of the application we should apply the following
+
+- CPU Utilization
+- Memory Utilization
+- Network Troughtput
+- Git state
+
+### General
+
+- [x] Start at login
+- [x] Format secure notes using Markdown
+
+### Developer
+
+- [x] Use the SSH Agent
+- [x] Display key names when authorizing connections
+- [x] Biometric unlock for 1Password CLI
+
+## SSH
+
+### Enable 1Password as the SSH Agent
+
+1Password now includes to option of hosting the private keys for our SSH collection. With the private keys stored in the vault, we can proceed to configure the ssh agent on MacOS to use 1Password as the provider
+
+Edit the configuration file with `vi ~/.ssh/config` and add the following content:
+
+```conf
+Host *
+  IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+```
+
+## Wave Link
+
+Elgato Wave 3
+
+VST
+
+### Renegate
+
+Gain Map -30db with 100% Gain Cut
+Detector at -29db
+Envelope 30ms Attach, Hold for 70ms, and Release at 20ms
+
+### T-De-Esser
+
+Processing at -32db
+Intensity at 7.0
+Sharpnet at -7.0
+Frequency High
+
+### Nova Equalizer
+
+| Q | Freq | Gain |
+|---|---|---|
+|1.0| 115 Hz| 3.0db|
+|1.0| 230 Hz| -0.5db |
+|0.5| 1000 Hz | -1.5db |
+|0.60|3.2 kHz| 4.5db |
+
+### Frontier Limitier
+
+Release - Fast
+Output Level -3.5db
+Threshold -8.0db
+
 
 ## VS Code Extensions
 
@@ -83,11 +321,13 @@ Prepare a Vagrantfile, see Example, and start:
 
 `vagrant up --provider qemu`
 
+### Multipass
 
+Install Multipass
 
-###  Multipass
-    `sudo multipass set local.driver=qemu
-     uname -vp
+```bash
+sudo multipass set local.driver=qemu
+uname -vp
 Darwin Kernel Version 20.6.0: Tue Feb 22 21:10:42 PST 2022; root:xnu-7195.141.26~1/RELEASE_ARM64_T8101 arm
 
 $ multipass networks
@@ -142,108 +382,8 @@ $ multipass shell
 >$ sudo adduser username
 >$ sudo usermod -aG sudo username
 >$ ip a
-    `
+```
 
-
-## What's Gets Installed
-
-### Fonts
-
-#### Monoid 
-- Monoisome-Regular.ttf
-
-#### Meslo LG M for Powerline
-- Meslo LG L Bold Italic for Powerline.ttf
-- Meslo LG L Bold for Powerline.ttf
-- Meslo LG L Italic for Powerline.ttf
-- Meslo LG L Regular for Powerline.ttf
-- Meslo LG M Bold Italic for Powerline.ttf
-- Meslo LG M Bold for Powerline.ttf
-- Meslo LG M Italic for Powerline.ttf
-- Meslo LG M Regular for Powerline.ttf
-- Meslo LG S Bold Italic for Powerline.ttf
-- Meslo LG S Bold for Powerline.ttf
-- Meslo LG S Italic for Powerline.ttf
-- Meslo LG S Regular for Powerline.ttf
-
-### dotfiles
-Cloned from my repo https://github.com/DamianFlynn/dotfiles.git
-- .zshrc
-- .gitignore
-- .inputrc
-- .osx
-- .vimrc
-
-### Applications 
-#### Command Line (Homebrew)
-- autoconf
-- bash-completion
-- gettext
-- gifsicle
-- git
-- github/gh/gh
-- go
-- gpg
-- httpie
-- iperf
-- mcrypt
-- nmap
-- node
-- ssh-copy-id
-- readline
-- openssl
-- pv
-- wget
-- wrk
-- zsh-history-substring-search
-- azure-cli
-- brew-cask-completion
-- curl
-- exiftool
-- flux
-- packer
-- hugo
-- jq
-- helm
-- kompose
-- telnet
-- k9s
-- terraform
-- kubernetes-cli
-- tmux
-- mas
-- bicep
-
-#### Graphical Apps (Homebrew)
-- docker
-- iterm2
-- google-chrome
-- vagrant
-- microsoft-teams
-- powershell
-- microsoft-edge
-- visual-studio-code
-- obsidian
-- elgato-stream-deck
-- elgato-wave-link
-- hdhomerun
-- yubico-yubikey-manager
-- 1password-beta
-- 1password-cli-beta
-
-#### Graphical Apps (Mac App Store)
-- Cardhop
-- MQTT Explorer
-- Microsoft Word
-- Microsoft PowerPoint
-- Microsoft Excel
-- Microsoft Outlook
-- OneDrive
-- XMind: Mind Mapping
-- Pluralsight: Learn Tech Skills
-- WhatsApp Desktop
-- Home Assistant
-- The Unarchiver
 
    ╭─────────────────────────────────────────────────────────────────╮
    │░░░░░░░░░░░░░░░░░░░░░░░░░░░ Next Steps ░░░░░░░░░░░░░░░░░░░░░░░░░░│
@@ -254,120 +394,7 @@ Cloned from my repo https://github.com/DamianFlynn/dotfiles.git
    │        The link below has Post Installation Instructions        │
    │                                                                 │
    └─────────────────────────────────────────────────────────────────┘
-# Manual Steps
 
-## Operating System settings
-Settings -> Preferences -> Mission Control
-
-- [x] Automatically rearrange spaces based on most recent use
-
-## iTerm
-In the Preferences window, select profiles
-
-### Appearance
-#### General
-Status bar location, set to *Bottom*
-
-### Keys
-#### Hotkeys
-Enable *Hotkeys*, and set the following options
-- Hotkey to use, in my case this is CTRL + `
-- [ ] Pin hotkey window
-- [ ] Automatically reopen on app reactivation
-- [x] Animate showing and hiding
-- [x] Floating Window 
-
-
-### Profiles
-
-The following can be applied on the **Default** Profile
-#### Colors
-In the *Color presets...* dropdown, select **Import** and load the file `~/Developer/dotfiles/theme.itermcolors`. Then in the same *Color Presets...* dropdown select the new **theme**
-
-#### Text
-Set the Font to *Meslo LG L for Powerline*, weight as *Regular*, with *Ligatures* enabled 
-
-#### Session
-Set the *Status bar* as enabled and then configure the status bar as you wish, typically, I add 
-
-#### Window
-Settings for new Windows
-- Set Style to *Normal*
-- Set Screen to *Screen with Cursor*
-- Set Space to *All Spaces*
-
-On the **Hotkey Window** Profile
-
-#### Window
-Settings for new Windows
-- Columns - 132
-- Rows - 25
-- Set Style to *Normal*
-- Set Screen to *Screen with Cursor*
-- Set Space to *All Spaces*
-
-## 1Password
-In the Preferences window of the application we should apply the following
-- CPU Utilization
-- Memory Utilization
-- Network Troughtput
-- Git state
-
-### General
-- [x] Start at login
-- [x] Format secure notes using Markdown
-
-### Developer
-- [x] Use the SSH Agent
-- [x] Display key names when authorizing connections
-- [x] Biometric unlock for 1Password CLI
-
-## SSH
-
-### Enable 1Password as the SSH Agent
-1Password now includes to option of hosting the private keys for our SSH collection. With the private keys stored in the vault, we can proceed to configure the ssh agent on MacOS to use 1Password as the provider
-
-Edit the configuration file with `vi ~/.ssh/config` and add the following content:
-
-```
-Host *
-	IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
-```
-
-
-## Wave Link
-
-Elgato Wave 3
-
-VST
-
-### Renegate 
-
-Gain Map -30db with 100% Gain Cut
-Detector at -29db
-Envelope 30ms Attach, Hold for 70ms, and Release at 20ms
-
-### T-De-Esser
-
-Processing at -32db
-Intensity at 7.0
-Sharpnet at -7.0
-Frequency High
-
-### Nova Equalizer
-
-| Q | Freq | Gain |
-|---|---|---|
-|1.0| 115 Hz| 3.0db|
-|1.0| 230 Hz| -0.5db |
-|0.5| 1000 Hz | -1.5db |
-|0.60|3.2 kHz| 4.5db |
-
-### Frontier Limitier
-
-Release - Fast
-Output Level -3.5db
-Threshold -8.0db
 
 ### Use with a remote Mac
 
