@@ -160,6 +160,7 @@ homebrew_cask_apps:
   - microsoft-teams
   - notion
   - obsidian
+  - obs-ndi
   - parallels-virtualization-sdk
   - plex
   - plexamp
