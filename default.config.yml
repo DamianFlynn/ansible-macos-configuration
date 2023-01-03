@@ -85,9 +85,11 @@ homebrew_installed_packages:
   - ansible
   - autoconf
   - azure-cli
+  - aztfy
   - bash-completion
   - bicep
   - brew-cask-completion
+  - brotli
   - curl
   - direnv
   - diff-so-fancy
@@ -151,14 +153,15 @@ homebrew_cask_apps:
   - drawio
   - elgato-stream-deck
   - elgato-wave-link
+  - firefox
   - google-chrome
   - google-drive
   - hdhomerun
-  - iterm2
+  - keyboard-maestro
   - logitech-options
   - microsoft-edge
   - microsoft-teams
-  - notion
+  - miniconda
   - obsidian
   - obs-ndi
   - parallels-virtualization-sdk
@@ -167,9 +170,9 @@ homebrew_cask_apps:
   - powershell
   - spotify
   - vagrant
+  - teamviewer
   - visual-studio-code
   - vlc
-  - keyboard-maestro
   - yubico-yubikey-manager
   # - yubico-authenticator
   # - yubico-yubikey-personalization-gui
@@ -195,11 +198,15 @@ mas_installed_apps:
   - { id: 1290358394, name: "Cardhop"}
   - { id: 617187233, name: "iHelp"}
   - { id: 611021963, name: "SerialTools"}
-  - { id: 1327661892, name: "XMind: Mind Mapping"}
   - { id: 1569813296, name: "1Password for Safari"}
   - { id: 975937182, name: "Fantastical - Calendar"}
   - { id: 1475387142, name: "Tailscale" }
   - { id: 1381004916, name: "Discovery - DNS-SD Browser"}
+
+# reeder
+# amphetamine
+# bitwarden
+
 
 mas_email: ""
 mas_password: ""
